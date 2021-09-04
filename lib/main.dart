@@ -892,6 +892,71 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: GestureDetector(
+                    onTap: () {
+                      launch("https://en.wikipedia.org/wiki/Stephanie_Kwolek");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2.1,
+                          height: MediaQuery.of(context).size.height / 5.5,
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 3, color: Colors.orange),
+                            //shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FStephanie-Kwolek.jpeg?alt=media&token=96ddb277-e660-4a59-b4dd-bee2dbb06dee",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 200,
+                        ),
+                        // Image.asset(
+                        //   "assets/images/georgewashingtoncarver.jpeg",
+                        //   fit: BoxFit.cover,
+                        //   width: MediaQuery.of(context).size.width / 2,
+                        //   height: MediaQuery.of(context).size.height / 4.6,
+                        // ),
+                        Container(
+                          padding: EdgeInsets.all(5),
+                          margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+                          //margin: EdgeInsets.fromLTRB(0, 20, 0, 20),
+                          width: MediaQuery.of(context).size.width / 2,
+                          height: MediaQuery.of(context).size.height / 5.1,
+                          //color: Colors.orange,
+                          child: Column(
+                            children: [
+                              Text(
+                                "Stephanie Kwolek",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              ),
+                              Text(
+                                  "She was an American chemist who is known for inventing Kevlar. Her career at the DuPont company spanned more than 40 years.",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle()),
+                            ],
+                          ),
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 3, color: Colors.orange),
+                            //shape: BoxShape.circle,
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
