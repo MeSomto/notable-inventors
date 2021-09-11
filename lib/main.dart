@@ -877,7 +877,7 @@ class HomePage extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                  "They were two American aviation pioneers generally credited with inventing, building, and flying the world's first successful motor-operated airplane.",
+                                  "They were two American aviation pioneers generally credited with inventing, building, and flying the world's firsts successful motor-operated airplanes.",
                                   textAlign: TextAlign.center,
                                   style: TextStyle()),
                             ],
