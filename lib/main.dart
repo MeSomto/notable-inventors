@@ -36,6 +36,34 @@ class HomePage extends StatelessWidget {
     const _garret = 'https://en.wikipedia.org/wiki/Garrett_Morgan';
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          PopupMenuButton(
+              itemBuilder: (context) => [
+                    PopupMenuItem(
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(right: 5),
+                            child: Icon(Icons.info_outline),
+                          ),
+                          Text('About'),
+                        ],
+                      ),
+                    ),
+                    PopupMenuItem(
+                      child: Row(
+                        //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(right: 5),
+                            child: Icon(Icons.remove_circle_outline),
+                          ),
+                          Text('Remove Ads'),
+                        ],
+                      ),
+                    ),
+                  ])
+        ],
         title: Text("Notable Inventors"),
       ),
       body: SafeArea(
@@ -957,9 +985,340 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: GestureDetector(
+                    onTap: () {
+                      launch("https://en.wikipedia.org/wiki/Steve_Wozniak");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2.1,
+                          height: MediaQuery.of(context).size.height / 5.5,
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 3, color: Colors.orange),
+                            //shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FSteve-Wozniak.jpeg?alt=media&token=38841b2a-78d4-45b7-b56e-699cd12bee2b",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 200,
+                        ),
+                        // Image.asset(
+                        //   "assets/images/georgewashingtoncarver.jpeg",
+                        //   fit: BoxFit.cover,
+                        //   width: MediaQuery.of(context).size.width / 2,
+                        //   height: MediaQuery.of(context).size.height / 4.6,
+                        // ),
+                        Container(
+                          padding: EdgeInsets.all(5),
+                          margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+                          //margin: EdgeInsets.fromLTRB(0, 20, 0, 20),
+                          width: MediaQuery.of(context).size.width / 2,
+                          height: MediaQuery.of(context).size.height / 5.1,
+                          //color: Colors.orange,
+                          child: Column(
+                            children: [
+                              Text(
+                                "Steve-Wozniak.",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              ),
+                              Text(
+                                  "He is an American electronics engineer, computer programmer, philanthropist, and technology entrepreneur.",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle()),
+                            ],
+                          ),
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 3, color: Colors.orange),
+                            //shape: BoxShape.circle,
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: GestureDetector(
+                    onTap: () {
+                      launch("https://en.wikipedia.org/wiki/Leonardo_da_Vinci");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2.1,
+                          height: MediaQuery.of(context).size.height / 5.5,
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 3, color: Colors.orange),
+                            //shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FLeonardo-da-Vinci.jpeg?alt=media&token=8581ace5-9e1f-49b5-9574-ba4871e2ef18",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 200,
+                        ),
+                        // Image.asset(
+                        //   "assets/images/georgewashingtoncarver.jpeg",
+                        //   fit: BoxFit.cover,
+                        //   width: MediaQuery.of(context).size.width / 2,
+                        //   height: MediaQuery.of(context).size.height / 4.6,
+                        // ),
+                        Container(
+                          padding: EdgeInsets.all(5),
+                          margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+                          //margin: EdgeInsets.fromLTRB(0, 20, 0, 20),
+                          width: MediaQuery.of(context).size.width / 2,
+                          height: MediaQuery.of(context).size.height / 5.1,
+                          //color: Colors.orange,
+                          child: Column(
+                            children: [
+                              Text(
+                                "Leonardo-da-Vinci",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              ),
+                              Text(
+                                  "He was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor and architect.",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle()),
+                            ],
+                          ),
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 3, color: Colors.orange),
+                            //shape: BoxShape.circle,
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: GestureDetector(
+                    onTap: () {
+                      launch("https://en.wikipedia.org/wiki/Samuel_Morse");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2.1,
+                          height: MediaQuery.of(context).size.height / 5.5,
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 3, color: Colors.orange),
+                            //shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FSamuel_Morse.jpeg?alt=media&token=fa79ae5f-8fa1-401f-92c6-3704864967e9",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 200,
+                        ),
+                        // Image.asset(
+                        //   "assets/images/georgewashingtoncarver.jpeg",
+                        //   fit: BoxFit.cover,
+                        //   width: MediaQuery.of(context).size.width / 2,
+                        //   height: MediaQuery.of(context).size.height / 4.6,
+                        // ),
+                        Container(
+                          padding: EdgeInsets.all(5),
+                          margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+                          //margin: EdgeInsets.fromLTRB(0, 20, 0, 20),
+                          width: MediaQuery.of(context).size.width / 2,
+                          height: MediaQuery.of(context).size.height / 5.1,
+                          //color: Colors.orange,
+                          child: Column(
+                            children: [
+                              Text(
+                                "Samuel Morse",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              ),
+                              Text(
+                                  "He was an American inventor and painter. After having established his reputation as a portrait painter, in his middle age Morse contributed to the invention of a single-wire telegraph system.",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle()),
+                            ],
+                          ),
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 3, color: Colors.orange),
+                            //shape: BoxShape.circle,
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FSir_Tim_Berners-Lee.jpeg?alt=media&token=67666641-abe6-4403-9396-a589f0c7d7cb',
+                  url: 'https://en.wikipedia.org/wiki/Tim_Berners-Lee',
+                  text:
+                      'He is an English computer scientist best known as the inventor of the World Wide Web. He is a Professorial Fellow of Computer Science at the University of Oxford',
+                  title: 'Tim Berners-Lee',
+                ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FArchimedes.jpeg?alt=media&token=51ed97b9-c3b8-43ef-afa0-1c0ad9c5cc35',
+                  url: 'https://en.wikipedia.org/wiki/Archimedes',
+                  text:
+                      'He was a Greek mathematician, physicist, engineer, astronomer, and inventor. He is regarded as one of the leading scientists in classical antiquity.',
+                  title: 'Archimedes',
+                ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FElijah_McCoy.jpeg?alt=media&token=c23b7935-036c-4188-963a-7399f58f1865',
+                  url: 'https://en.wikipedia.org/wiki/Elijah_McCoy',
+                  text:
+                      'He was a Canadian-born inventor and engineer of African American descent who was notable for his 57 US patents, most having to do with the lubrication of steam engines.',
+                  title: 'Elijah McCoy',
+                ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FMaragarat%20E.%20Knight.jpeg?alt=media&token=94592f50-df57-4375-9c73-1dd4e90ba1db',
+                  url: 'https://en.wikipedia.org/wiki/Margaret_E._Knight',
+                  text:
+                      'She was an American inventor, notably of a machine to produce flat-bottomed paper bags. She has been called "the most famous 19th-century woman inventor".',
+                  title: 'Margaret E. Knight',
+                ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FJohn%20Logie%20Baird.jpeg?alt=media&token=5dfb96d1-9c7e-44d6-bdc6-201071d9200b',
+                  url: 'https://en.wikipedia.org/wiki/John_Logie_Baird',
+                  text:
+                      'He was a Scottish inventor, electrical engineer, and innovator who demonstrated his working television system on 26 January 1926.',
+                  title: 'John Logie Baird',
+                ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FHedy_Lamarr.jpeg?alt=media&token=d8c9b2bf-55a2-4a25-8e40-6134a46418c1',
+                  url: 'https://en.wikipedia.org/wiki/Hedy_Lamarr',
+                  text:
+                      'She was an Austrian-born American actress, inventor, and film producer. She appeared in 30 films over a 28-year career in Europe and the United States.',
+                  title: 'Hedy Lamarr',
+                ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FCharles_Babbage.jpeg?alt=media&token=d3c45e6e-54ea-4fdc-a06f-5961e6719115',
+                  url: 'https://en.wikipedia.org/wiki/Charles_Babbage',
+                  text:
+                      'He was an English polymath. A mathematician, philosopher, inventor and mechanical engineer, Babbage originated the concept of a digital programmable computer.',
+                  title: 'Charles Babbage',
+                ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FRobert%20Fulton.jpeg?alt=media&token=9edbaea2-0274-46d3-8ae4-38c2d8b88cf5',
+                  url: 'https://en.wikipedia.org/wiki/Robert_Fulton',
+                  text:
+                      'He was an American engineer and inventor who is widely credited with developing the worlds first commercially successful steamboat, the North River Steamboat.',
+                  title: 'Robert Fulton',
+                ),
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class NotableInventors extends StatelessWidget {
+  const NotableInventors({
+    Key key,
+    @required this.url,
+    @required this.imageUrl,
+    @required this.title,
+    @required this.text,
+  }) : super(key: key);
+  final String url;
+  final String imageUrl;
+  final String title;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: GestureDetector(
+        onTap: () {
+          launch(url);
+        },
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width / 2.1,
+              height: MediaQuery.of(context).size.height / 5.5,
+              decoration: BoxDecoration(
+                border: Border.all(width: 3, color: Colors.orange),
+                //shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: NetworkImage(imageUrl),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(30),
+              ),
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 200,
+            ),
+            Container(
+              padding: EdgeInsets.all(5),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+              //margin: EdgeInsets.fromLTRB(0, 20, 0, 20),
+              width: MediaQuery.of(context).size.width / 2,
+              height: MediaQuery.of(context).size.height / 5.1,
+              //color: Colors.orange,
+              child: Column(
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    ),
+                  ),
+                  Text(text, textAlign: TextAlign.center, style: TextStyle()),
+                ],
+              ),
+              decoration: BoxDecoration(
+                border: Border.all(width: 3, color: Colors.orange),
+                //shape: BoxShape.circle,
+                borderRadius: BorderRadius.circular(30),
+              ),
+            ),
+          ],
         ),
       ),
     );
