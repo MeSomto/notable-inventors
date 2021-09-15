@@ -1244,6 +1244,14 @@ class HomePage extends StatelessWidget {
                       'He was an American engineer and inventor who is widely credited with developing the worlds first commercially successful steamboat, the North River Steamboat.',
                   title: 'Robert Fulton',
                 ),
+                NotableInventors(
+                  imageUrl:
+                      'https://firebasestorage.googleapis.com/v0/b/notable-inventors.appspot.com/o/notableInventorsPics%2FLewis%20Howard%20Latimer.jpeg?alt=media&token=cc0c2f51-ea78-47b1-8f98-d3ada49c63c4',
+                  url: 'https://en.wikipedia.org/wiki/Lewis_Howard_Latimer',
+                  text:
+                      'He was a Black American inventor and patent draftsman. His inventions included an evaporative air conditioner, an improved process for manufacturing carbon filaments for light bulbs.',
+                  title: 'Lewis Howard Latimer',
+                ),
               ],
             ),
           ),
