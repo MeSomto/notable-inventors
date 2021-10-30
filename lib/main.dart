@@ -1301,10 +1301,10 @@ class HomePage extends StatelessWidget {
                   url: 'https://en.wikipedia.org/wiki/Montgolfier_brothers',
                   text: 'Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier, were aviation pioneers, balloonists and paper manufacturers from the commune Annonay in France.',
                   title: 'Montgolfier brothers',),
-                NotableInventors(imageUrl: '',
+                NotableInventors2(imageUrl: 'assets/images/Me.jpg',
                   url: '',
-                  text: '',
-                  title: '',),
+                  text: 'I am the programer/maker of this app and I was 11years when I made. I come from Abia, Nigeria. Hope you like my app.',
+                  title: 'Somtochukwu Nengi Ezenna',),
               ],
             ),
           ),
@@ -1346,6 +1346,78 @@ class NotableInventors extends StatelessWidget {
                 //shape: BoxShape.circle,
                 image: DecorationImage(
                   image: NetworkImage(imageUrl),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(30),
+              ),
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 200,
+            ),
+            Container(
+              padding: EdgeInsets.all(5),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+              //margin: EdgeInsets.fromLTRB(0, 20, 0, 20),
+              width: MediaQuery.of(context).size.width / 2,
+              height: MediaQuery.of(context).size.height / 5.1,
+              //color: Colors.orange,
+              child: Column(
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    ),
+                  ),
+                  Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: MediaQuery.of(context).size.width / 30)),
+                ],
+              ),
+              decoration: BoxDecoration(
+                border: Border.all(width: 3, color: Colors.orange),
+                //shape: BoxShape.circle,
+                borderRadius: BorderRadius.circular(30),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class NotableInventors2 extends StatelessWidget {
+  const NotableInventors2({
+    Key key,
+    @required this.url,
+    @required this.imageUrl,
+    @required this.title,
+    @required this.text,
+  }) : super(key: key);
+  final String url;
+  final String imageUrl;
+  final String title;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: GestureDetector(
+        onTap: () {
+          launch(url);
+        },
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width / 2.1,
+              height: MediaQuery.of(context).size.height / 5.5,
+              decoration: BoxDecoration(
+                border: Border.all(width: 3, color: Colors.orange),
+                //shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage(imageUrl),
                   fit: BoxFit.cover,
                 ),
                 borderRadius: BorderRadius.circular(30),
