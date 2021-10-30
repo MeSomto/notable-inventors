@@ -74,6 +74,10 @@ class HomePage extends StatelessWidget {
             child: Column(
               //mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                NotableInventors2(imageUrl: 'assets/images/Me.jpg',
+                  url: '',
+                  text: 'I am the programer/maker of this app and I was 11 years when I made it in 2021. I come from Abia, Nigeria. Hope you like my app. Acknowledgements to my teacher Increase of Skyline Futuristic Academy',
+                  title: 'Somtochukwu Nengi Ezenna',),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: GestureDetector(
@@ -1301,10 +1305,7 @@ class HomePage extends StatelessWidget {
                   url: 'https://en.wikipedia.org/wiki/Montgolfier_brothers',
                   text: 'Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier, were aviation pioneers, balloonists and paper manufacturers from the commune Annonay in France.',
                   title: 'Montgolfier brothers',),
-                NotableInventors2(imageUrl: 'assets/images/Me.jpg',
-                  url: '',
-                  text: 'I am the programer/maker of this app and I was 11years when I made. I come from Abia, Nigeria. Hope you like my app.',
-                  title: 'Somtochukwu Nengi Ezenna',),
+
               ],
             ),
           ),
