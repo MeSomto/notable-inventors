@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    int fontS = 30;
     const _garret = 'https://en.wikipedia.org/wiki/Garrett_Morgan';
     return Scaffold(
       appBar: AppBar(
@@ -125,7 +126,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an African-American inventor, businessman, and community leader. His most notable inventions were a three-position traffic signal and a smoke hood notably used in a 1916 tunnel construction disaster rescue.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -191,7 +192,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an American agricultural scientist and inventor who promoted alternative crops to cotton and methods to prevent soil depletion. He was the most prominent black scientist of the early 20th century.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -255,7 +256,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was a Serbian-American inventor, electrical engineer, mechanical engineer, and futurist best known for his contributions to the design of the modern alternating current electricity supply system.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -320,7 +321,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "She was an American ophthalmologist, inventor, humanitarian, and academic. She was the inventor of laser cataract surgery. Her invention was called Laserphaco Probe.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -386,7 +387,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was a Scottish-born inventor, scientist, and engineer who is credited with inventing and patenting the first practical telephone. He also co-founded the American Telephone and Telegraph Company in 1885.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -451,7 +452,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an American polymath active as a writer, scientist, inventor, statesman, diplomat, printer, publisher and political philosopher.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -516,7 +517,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an American inventor, widely known for inventing the cotton gin, one of the key inventions of the Industrial Revolution that shaped the economy of the Antebellum South.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -581,7 +582,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an Italian inventor and electrical engineer, known for his pioneering work on long-distance radio transmission, development of Marconi's law, and a radio telegraph system.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -646,7 +647,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an American industrialist, business magnate, and founder of the Ford Motor Company, and chief developer of the assembly line technique of mass production.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -712,7 +713,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was a German inventor, printer, publisher, and goldsmith who introduced printing to Europe with his mechanical movable-type printing press. ",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -777,7 +778,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an American business magnate, industrial designer, investor, and media proprietor.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -842,7 +843,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an American inventor and businessman who has been described as America's greatest inventor. He developed many devices in fields",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -907,7 +908,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "They were two American aviation pioneers generally credited with inventing, building, and flying the world's firsts successful motor-operated airplanes.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -972,7 +973,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "She was an American chemist who is known for inventing Kevlar. Her career at the DuPont company spanned more than 40 years.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -1037,7 +1038,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He is an American electronics engineer, computer programmer, philanthropist, and technology entrepreneur.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -1102,7 +1103,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor and architect.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -1167,7 +1168,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                   "He was an American inventor and painter. After having established his reputation as a portrait painter, in his middle age Morse contributed to the invention of a single-wire telegraph system.",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle()),
+                                  style: TextStyle(fontSize: MediaQuery.of(context).size.width / fontS)),
                             ],
                           ),
                           decoration: BoxDecoration(
@@ -1296,6 +1297,14 @@ class HomePage extends StatelessWidget {
                   url: 'https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek',
                   text: 'He was a Dutch businessman and scientist in the Golden Age of Dutch science and technology. He is widely known as the father of Microbiology',
                   title: 'Antonie van Leeuwenhoek',),
+                NotableInventors(imageUrl: 'https://i.pinimg.com/600x315/39/b4/a9/39b4a9f8dd8e2c8ce2a45731371747c9.jpg',
+                  url: 'https://en.wikipedia.org/wiki/Montgolfier_brothers',
+                  text: 'Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier, were aviation pioneers, balloonists and paper manufacturers from the commune Annonay in France.',
+                  title: 'Montgolfier brothers',),
+                NotableInventors(imageUrl: '',
+                  url: '',
+                  text: '',
+                  title: '',),
               ],
             ),
           ),
@@ -1361,7 +1370,7 @@ class NotableInventors extends StatelessWidget {
                       fontSize: 12,
                     ),
                   ),
-                  Text(text, textAlign: TextAlign.center, style: TextStyle()),
+                  Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: MediaQuery.of(context).size.width / 30)),
                 ],
               ),
               decoration: BoxDecoration(
