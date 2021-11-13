@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+await SystemChrome.setPreferredOrientations(
+  [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown],
+);
+
   runApp(MyApp());
 }
 
@@ -33,7 +39,7 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    int fontS = 30;
+    int fontS = 34;
     const _garret = 'https://en.wikipedia.org/wiki/Garrett_Morgan';
     return Scaffold(
       appBar: AppBar(
@@ -1398,7 +1404,7 @@ class NotableInventors extends StatelessWidget {
                       fontSize: 12,
                     ),
                   ),
-                  Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: MediaQuery.of(context).size.width / 30)),
+                  Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: MediaQuery.of(context).size.width / 34)),
                 ],
               ),
               decoration: BoxDecoration(
@@ -1470,7 +1476,7 @@ class NotableInventors2 extends StatelessWidget {
                       fontSize: 12,
                     ),
                   ),
-                  Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: MediaQuery.of(context).size.width / 30)),
+                  Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: MediaQuery.of(context).size.width / 34)),
                 ],
               ),
               decoration: BoxDecoration(
